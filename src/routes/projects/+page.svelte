@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ProjectImageBox from '$lib/components/Projects/ProjectImageBox.svelte';
 	import { projectCategories } from '$lib/data/projects';
 </script>
 
@@ -20,22 +21,7 @@
 				</header>
 				<div class="grid grid-cols-3 gap-4">
 					{#each category.projects as project}
-						<a
-							href="/projects/{category.path}/{project.slug}"
-							class="aspect-square rounded-container-token overflow-hidden group shadow-xl {project.background}"
-						>
-							<img
-								class="w-full aspect-square transition-all duration-[200] group-hover:-translate-y-[101%] {project.additionalThumbnailStyles ||
-									''}"
-								src={project.thumbnail}
-								alt={project.name}
-							/>
-							<caption
-								class="w-full h-full flex justify-center items-center group-hover:-translate-y-full"
-							>
-								{project.name}
-							</caption>
-						</a>
+						<ProjectImageBox {project} {category} />
 					{/each}
 				</div>
 			</div>

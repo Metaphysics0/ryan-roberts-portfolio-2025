@@ -121,7 +121,9 @@ export const projectCategories: Category[] = [
           During my time at the company, I have led the design and development of many integral features that the company is using today 
         </div>`,
 				url: 'https://www.cityhive.net/',
-				thumbnail: `${IMAGE_CDN_URL_PREFIX}/2021/cityhive/thumb.png`,
+				// thumbnail: `${IMAGE_CDN_URL_PREFIX}/2021/cityhive/thumb.png`,
+				thumbnail:
+					'https://assets.lightspeedhq.com/img/2016/07/500db4e8-city-hive-logo-ben-field.png',
 				banner: `${IMAGE_CDN_URL_PREFIX}/2021/cityhive/img_2.png`,
 				background: 'variant-filled-tertiary'
 			},
