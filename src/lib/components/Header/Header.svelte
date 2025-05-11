@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { LightSwitch, getDrawerStore } from '@skeletonlabs/skeleton';
-	import { getUnsplashImageLink } from '$lib/data/images';
+	import { VEIN_FM_CANDID_IMAGE_URL } from '$lib/constants';
 
 	const drawerStore = getDrawerStore();
 
@@ -18,7 +18,7 @@
 		<a href="/" title="Return to Homepage">
 			<img
 				class="rounded-full w-[48px] aspect-square overflow-hidden shadow-xl object-cover object-top"
-				src={getUnsplashImageLink({ id: 'mPGSvqHAqTU' })}
+				src={VEIN_FM_CANDID_IMAGE_URL}
 				alt="Portfolio"
 			/>
 		</a>

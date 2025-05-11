@@ -1,7 +1,6 @@
 // Project Data
 
 import { IMAGE_CDN_URL_PREFIX } from '$lib/constants';
-import { getUnsplashImageLink } from '$lib/data/images';
 
 export interface Category {
 	/** Provide a category title. */
@@ -76,7 +75,7 @@ export const projectCategories: Category[] = [
 				description: `<div><p>Stronger Together is a collaborative fitness mobile application to motivate and inspire others to workout and get stronger.</p><p>It's a simple app where you log everytime you complete a set of pull-ups, push-ups, and other exercises, and everyone else with the app will receive a notification.</p><p>Used React Native, Firebase Notifications, and MongoDB.</p></div>`,
 				url: 'https://example.com/',
 				thumbnail: `${IMAGE_CDN_URL_PREFIX}/assets/stronger-two.png`,
-				banner: getUnsplashImageLink({ id: 'KiEiI2b9GkU', w: 1920, h: 1080 }),
+				banner: 'https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixlib=rb-4.0.3',
 				background: 'variant-filled-primary',
 				additionalStyles: 'object-contain'
 			}
