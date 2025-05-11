@@ -1,5 +1,5 @@
 <script>
-	import { getImageLink } from '$lib/data/images';
+	import { CONCERT_PHOTO_1_URL } from '$lib/constants';
 </script>
 
 <div class="page-container page-spacing">
@@ -13,7 +13,7 @@
 	<!-- Banner -->
 	<img
 		class="bg-black w-full aspect-[21:9] rounded-container-token overflow-hidden shadow-xl"
-		src={getImageLink({ id: '3uqauucYhjQ', w: 1280, h: 512 })}
+		src={CONCERT_PHOTO_1_URL}
 		alt="banner"
 	/>
 

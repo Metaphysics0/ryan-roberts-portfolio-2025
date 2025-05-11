@@ -2,6 +2,8 @@
 // Source: https://unsplash.com/
 // Image Source: https://unsplash.com/photos/{imageId}
 
+import { CONCERT_PHOTO_1_URL, HEADSHOT_IMAGE_URL } from '$lib/constants';
+
 type ImageKey = keyof typeof images;
 
 type ImageLinkArgs = {
@@ -16,7 +18,7 @@ type ImageLinkArgs = {
 };
 
 /** Retreive the desired image by ID at the desired height/width.  */
-export function getImageLink({ id, w, h, max }: ImageLinkArgs): string {
+export function getUnsplashImageLink({ id, w, h, max }: ImageLinkArgs): string {
 	const path = images[id].raw;
 	if (!w || !h) return path;
 
@@ -24,14 +26,12 @@ export function getImageLink({ id, w, h, max }: ImageLinkArgs): string {
 }
 
 export const images = {
-	// Portrait of Woman
 	mPGSvqHAqTU: {
-		// raw: 'https://d234wyh4hwmj0y.cloudfront.net/assets/profile_cropped.jpeg'
-		raw: 'https://cdn.cym.bio/site/wp-content/uploads/2024/01/28100940/headshot-111.jpeg'
+		raw: HEADSHOT_IMAGE_URL
 	},
 	// Workstation
 	'3uqauucYhjQ': {
-		raw: 'https://images.unsplash.com/photo-1510852151262-05bfbfbe996d?ixlib=rb-4.0.3'
+		raw: CONCERT_PHOTO_1_URL
 	},
 	// Projects
 	zNRITe8NPqY: {

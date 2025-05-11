@@ -1,6 +1,7 @@
 // Project Data
 
-import { getImageLink } from '$lib/data/images';
+import { IMAGE_CDN_URL_PREFIX } from '$lib/constants';
+import { getUnsplashImageLink } from '$lib/data/images';
 
 export interface Category {
 	/** Provide a category title. */
@@ -41,7 +42,6 @@ export const projectCategories: Category[] = [
 	{
 		path: 'development',
 		name: 'Recent Web Projects',
-		// description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
 		projects: [
 			{
 				slug: 'songsterr-downloader',
@@ -55,8 +55,8 @@ export const projectCategories: Category[] = [
         </div>
         `,
 				url: 'https://sonsgsterr-downloader.com',
-				thumbnail: 'https://d234wyh4hwmj0y.cloudfront.net/2023/songsterr-downloader/logo.png',
-				banner: 'https://d234wyh4hwmj0y.cloudfront.net/2023/songsterr-downloader/demo.gif',
+				thumbnail: `${IMAGE_CDN_URL_PREFIX}/2023/songsterr-downloader/logo.png`,
+				banner: `${IMAGE_CDN_URL_PREFIX}/2023/songsterr-downloader/demo.gif`,
 				additionalStyles: 'object-contain',
 				background: 'variant-filled-primary'
 			},
@@ -65,8 +65,8 @@ export const projectCategories: Category[] = [
 				name: 'Open Tunings',
 				description: `<div><p>Open tunings is a website tailored for guitarists and musicians who aspire to find new and alternate ways to tune their guitar.</p><p>It's a crowd-sourced listing website, where anybody can add a tuning for other guitarists to try. Created a web based instrument with Tone.js, to preview and listen to the way the tuning sounds.</p><p>Used SvelteKit, MongoDB, Tailwind, Vercel, and more to create this.</p></div>`,
 				url: 'https://open-tunings.vercel.app/',
-				thumbnail: 'https://d234wyh4hwmj0y.cloudfront.net/2023/open-tunings/logo-lg.png',
-				banner: 'https://d234wyh4hwmj0y.cloudfront.net/2023/open-tunings/create_demo.gif',
+				thumbnail: `${IMAGE_CDN_URL_PREFIX}/2023/open-tunings/logo-lg.png`,
+				banner: `${IMAGE_CDN_URL_PREFIX}/2023/open-tunings/create_demo.gif`,
 				additionalStyles: 'object-contain',
 				background: 'variant-filled-primary'
 			},
@@ -75,22 +75,10 @@ export const projectCategories: Category[] = [
 				name: 'Stronger Together',
 				description: `<div><p>Stronger Together is a collaborative fitness mobile application to motivate and inspire others to workout and get stronger.</p><p>It's a simple app where you log everytime you complete a set of pull-ups, push-ups, and other exercises, and everyone else with the app will receive a notification.</p><p>Used React Native, Firebase Notifications, and MongoDB.</p></div>`,
 				url: 'https://example.com/',
-				// thumbnail: 'https://d234wyh4hwmj0y.cloudfront.net/assets/stronger-two.png',
-				thumbnail: 'https://d234wyh4hwmj0y.cloudfront.net/assets/stronger-two.png',
-				banner: getImageLink({ id: 'KiEiI2b9GkU', w: 1920, h: 1080 }),
+				thumbnail: `${IMAGE_CDN_URL_PREFIX}/assets/stronger-two.png`,
+				banner: getUnsplashImageLink({ id: 'KiEiI2b9GkU', w: 1920, h: 1080 }),
 				background: 'variant-filled-primary',
 				additionalStyles: 'object-contain'
-			},
-			{
-				slug: 'accountability-texter',
-				name: 'Accountability Texter',
-				description: `A web app to hold you accountable for achieving a goal. Simply enter in a goal that you want to achieve, a target date, and your phone number, and receive an AI generated text x times per day until the target date arrives!
-					Inspired from Pieter Levels, this was an app that I wanted to build for myself to personally use.`,
-				url: 'https://accountability-texter.vercel.app/start',
-				thumbnail: `https://d234wyh4hwmj0y.cloudfront.net/2023/accountability-texter/dude.png`,
-				banner: 'https://d234wyh4hwmj0y.cloudfront.net/2023/accountability-texter/img_1.png',
-				background: 'variant-filled-primary',
-				videos: [{ src: 'https://www.youtube.com/embed/kyPzV8m9wQ8', caption: 'Tech Walkthrough' }]
 			}
 		]
 	},
@@ -134,8 +122,8 @@ export const projectCategories: Category[] = [
           During my time at the company, I have led the design and development of many integral features that the company is using today 
         </div>`,
 				url: 'https://www.cityhive.net/',
-				thumbnail: 'https://d234wyh4hwmj0y.cloudfront.net/2021/cityhive/thumb.png',
-				banner: 'https://d234wyh4hwmj0y.cloudfront.net/2021/cityhive/img_2.png',
+				thumbnail: `${IMAGE_CDN_URL_PREFIX}/2021/cityhive/thumb.png`,
+				banner: `${IMAGE_CDN_URL_PREFIX}/2021/cityhive/img_2.png`,
 				background: 'variant-filled-tertiary'
 			},
 			{
@@ -147,8 +135,8 @@ export const projectCategories: Category[] = [
           See the highlights in <a href="#" target="_blank">My Resume</a> to read more about my notable achievements and contributions here.
         </div>`,
 				url: 'https://www.linkedin.com/company/deltika-ltd/',
-				thumbnail: 'https://d234wyh4hwmj0y.cloudfront.net/2021/deltika/thumb.jpeg',
-				banner: 'https://d234wyh4hwmj0y.cloudfront.net/2021/deltika/img_2.png',
+				thumbnail: `${IMAGE_CDN_URL_PREFIX}/2021/deltika/thumb.jpeg`,
+				banner: `${IMAGE_CDN_URL_PREFIX}/2021/deltika/img_2.png`,
 				background: 'variant-filled-tertiary'
 			}
 		]

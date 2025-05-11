@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Social from '$lib/components/Social/Social.svelte';
-	import { getImageLink } from '$lib/data/images';
+	import { getUnsplashImageLink } from '$lib/data/images';
 </script>
 
 <div class="page-container page-spacing">
@@ -18,7 +18,7 @@
 		<!-- src="https://source.unsplash.com/mPGSvqHAqTU/400x400" -->
 		<img
 			class="order-1 md:order-2 rounded-full w-32 md:w-[400px] aspect-square overflow-hidden shadow-xl object-cover object-top"
-			src={getImageLink({ id: 'mPGSvqHAqTU' })}
+			src={getUnsplashImageLink({ id: 'mPGSvqHAqTU' })}
 			alt="Portfolio"
 		/>
 	</header>
