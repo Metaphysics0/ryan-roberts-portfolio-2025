@@ -35,6 +35,9 @@ export interface Project {
 
 	/** Provide additional thumbnail styles. */
 	additionalThumbnailStyles?: string;
+
+	/** If true, render a white background behind the thumbnail (for transparent PNGs). */
+	needsWhiteBg?: boolean;
 }
 
 export const projectCategories: Category[] = [
@@ -108,7 +111,8 @@ export const projectCategories: Category[] = [
 					}
 				],
 				additionalThumbnailStyles: 'object-contain',
-				background: 'white-100'
+				background: 'white-100',
+				needsWhiteBg: true
 			},
 			{
 				slug: 'cityhive',

@@ -1,5 +1,5 @@
 <script>
-	import { CONCERT_PHOTO_1_URL } from '$lib/constants';
+	import { CONCERT_PHOTO_1_URL, RESUME_URL } from '$lib/constants';
 </script>
 
 <div class="page-container page-spacing">
@@ -72,7 +72,7 @@
 	<section class="text-center">
 		<a href="/about" class="btn btn-lg variant-filled-primary">
 			<i class="fa-solid fa-download" />
-			<span>Download Resume</span>
+			<a href={RESUME_URL} target="_blank" rel="noreferrer">Download Resume</a>
 		</a>
 	</section>
 </div>

@@ -37,7 +37,7 @@
 		</header>
 
 		<!-- Description -->
-		<article class="space-y-8">
+		<article class="space-y-8 prose prose-p:text-lg md:prose-p:text-xl">
 			{@html project.description}
 		</article>
 
