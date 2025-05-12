@@ -24,15 +24,28 @@
 					<i class="fa-solid fa-arrow-left" />
 					<span>Browse</span>
 				</a>
-				<a
-					class="btn md:btn-lg variant-filled-primary"
-					href={project.url}
-					target="_blank"
-					rel="noreferrer"
-				>
-					<span>{project.launchButtonText || 'Launch'}</span>
-					<i class="fa-solid fa-arrow-up-right-from-square" />
-				</a>
+				{#if project.url}
+					<a
+						class="btn md:btn-lg variant-filled-tertiary"
+						href={project.url}
+						target="_blank"
+						rel="noreferrer"
+					>
+						<span>Launch</span>
+						<i class="fa-solid fa-arrow-up-right-from-square" />
+					</a>
+				{/if}
+				{#if project.sourceCodeUrl}
+					<a
+						class="btn md:btn-lg variant-filled-primary"
+						href={project.sourceCodeUrl}
+						target="_blank"
+						rel="noreferrer"
+					>
+						<span>Source</span>
+						<i class="fa-brands fa-github" />
+					</a>
+				{/if}
 			</div>
 		</header>
 

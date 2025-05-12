@@ -5,5 +5,7 @@
 
 <footer class="bg-surface-50-900-token p-10 space-y-8 flex flex-col items-center">
 	<Social />
-	<p class="text-xs text-primary-500">&copy; Copyright {currentYear}. All rights reserved.</p>
+	<p class="text-xs text-primary-500">
+		&copy; Fullstackservices.io {currentYear}. All rights reserved.
+	</p>
 </footer>

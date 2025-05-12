@@ -21,7 +21,7 @@ export interface Project {
 	/** Provide a project description. Supports HTML. */
 	description?: string;
 	/** Provide the url of the project. */
-	url: string;
+	url?: string;
 	/** Provide the thumbnail image of the project. */
 	thumbnail: string;
 	/** Provide the banner image of the project. */
@@ -39,7 +39,7 @@ export interface Project {
 	/** If true, render a white background behind the thumbnail (for transparent PNGs). */
 	needsWhiteBg?: boolean;
 
-	launchButtonText?: string;
+	sourceCodeUrl?: string;
 }
 
 export const projectCategories: Category[] = [
@@ -59,6 +59,7 @@ export const projectCategories: Category[] = [
         </div>
         `,
 				url: 'https://songsterr-downloader.com',
+				sourceCodeUrl: 'https://github.com/Metaphysics0/songsterr-downloader',
 				thumbnail: `${CDN_URL_PREFIX}/2023/songsterr-downloader/logo.png`,
 				banner: `${CDN_URL_PREFIX}/2023/songsterr-downloader/demo.gif`,
 				additionalStyles: 'object-contain',
@@ -69,6 +70,7 @@ export const projectCategories: Category[] = [
 				name: 'Open Tunings',
 				description: `<div><p>Open tunings is a website tailored for guitarists and musicians who aspire to find new and alternate ways to tune their guitar.</p><p>It's a crowd-sourced listing website, where anybody can add a tuning for other guitarists to try. Created a web based instrument with Tone.js, to preview and listen to the way the tuning sounds.</p><p>Used SvelteKit, MongoDB, Tailwind, Vercel, and more to create this.</p></div>`,
 				url: 'https://open-tunings.vercel.app/',
+				sourceCodeUrl: 'https://github.com/Metaphysics0/open-tunings',
 				thumbnail: `${CDN_URL_PREFIX}/2023/open-tunings/logo-lg.png`,
 				banner: `${CDN_URL_PREFIX}/2023/open-tunings/create_demo.gif`,
 				additionalStyles: 'object-contain',
@@ -78,12 +80,11 @@ export const projectCategories: Category[] = [
 				slug: 'stronger-together',
 				name: 'Stronger Together',
 				description: `<div><p>Stronger Together is a collaborative fitness mobile application to motivate and inspire others to workout and get stronger.</p><p>It's a simple app where you log everytime you complete a set of pull-ups, push-ups, and other exercises, and everyone else with the app will receive a notification.</p><p>Used React Native, Firebase Notifications, and MongoDB.</p></div>`,
-				url: 'https://github.com/Metaphysics0/stronger-together',
+				sourceCodeUrl: 'https://github.com/Metaphysics0/stronger-together',
 				thumbnail: `${CDN_URL_PREFIX}/assets/stronger-two.png`,
 				banner: `${CDN_URL_PREFIX}/assets/stronger-together-app-screens.png`,
 				background: 'variant-filled-primary',
-				additionalStyles: 'object-contain',
-				launchButtonText: 'Source Code'
+				additionalStyles: 'object-contain'
 			}
 		]
 	},
