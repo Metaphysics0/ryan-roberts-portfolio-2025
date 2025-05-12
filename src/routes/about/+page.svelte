@@ -71,8 +71,10 @@
 	<!-- Resume -->
 	<section class="text-center">
 		<a href="/about" class="btn btn-lg variant-filled-primary">
-			<i class="fa-solid fa-download" />
-			<a href={RESUME_URL} target="_blank" rel="noreferrer">Download Resume</a>
+			<span>
+				<i class="fa-solid fa-download" />
+				<a href={RESUME_URL} target="_blank" rel="noreferrer">Download Resume</a>
+			</span>
 		</a>
 	</section>
 </div>
