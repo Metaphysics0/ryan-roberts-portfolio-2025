@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { LightSwitch, getDrawerStore } from '@skeletonlabs/skeleton';
-	import { VEIN_FM_CANDID_IMAGE_URL } from '$lib/constants';
+	import { RR_LOGO_PNG_URL } from '$lib/constants';
 
 	const drawerStore = getDrawerStore();
 
@@ -17,8 +17,8 @@
 		<!-- Portrait -->
 		<a href="/" title="Return to Homepage">
 			<img
-				class="rounded-full w-[48px] aspect-square overflow-hidden shadow-xl object-cover object-top"
-				src={VEIN_FM_CANDID_IMAGE_URL}
+				class="rounded-full w-[48px] aspect-square overflow-hidden shadow-xl object-cover object-top bg-white"
+				src={RR_LOGO_PNG_URL}
 				alt="Portfolio"
 			/>
 		</a>

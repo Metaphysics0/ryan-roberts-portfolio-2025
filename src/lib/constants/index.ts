@@ -5,6 +5,8 @@ export const HEADSHOT_IMAGE_URL =
 
 export const RESUME_URL = `${IMAGE_CDN_URL_PREFIX}/ryan-roberts-cv-2025.pdf`;
 
+export const RR_LOGO_PNG_URL = `${IMAGE_CDN_URL_PREFIX}/rr-logo.png`;
+
 export const VEIN_FM_HEADSHOT_URL = `${IMAGE_CDN_URL_PREFIX}/assets/vein-fm-headshot.jpg`;
 export const VEIN_FM_CANDID_IMAGE_URL = `${IMAGE_CDN_URL_PREFIX}/assets/vein-fm-candid.jpg`;
 

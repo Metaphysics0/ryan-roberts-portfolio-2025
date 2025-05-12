@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Social from '$lib/components/Social/Social.svelte';
-	import { VEIN_FM_CANDID_IMAGE_URL } from '$lib/constants';
+	import { HEADSHOT_IMAGE_URL } from '$lib/constants';
 </script>
 
 <div class="page-container page-spacing">
@@ -17,7 +17,7 @@
 		</div>
 		<img
 			class="order-1 md:order-2 rounded-full w-32 md:w-[400px] aspect-square overflow-hidden shadow-xl object-cover object-top"
-			src={VEIN_FM_CANDID_IMAGE_URL}
+			src={HEADSHOT_IMAGE_URL}
 			alt="Portfolio"
 		/>
 	</header>

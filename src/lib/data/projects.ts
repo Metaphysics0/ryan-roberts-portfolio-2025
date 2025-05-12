@@ -56,7 +56,7 @@ export const projectCategories: Category[] = [
           <p><a href="https://songsterr-downloader.com" target="_blank">Songsterr Downloader</a> is hugely popular, with over 100 downloads per day, a dedicated reddit thread, and many github stars, the potential for growth within this application is huge.</p>
         </div>
         `,
-				url: 'https://sonsgsterr-downloader.com',
+				url: 'https://songsterr-downloader.com',
 				thumbnail: `${IMAGE_CDN_URL_PREFIX}/2023/songsterr-downloader/logo.png`,
 				banner: `${IMAGE_CDN_URL_PREFIX}/2023/songsterr-downloader/demo.gif`,
 				additionalStyles: 'object-contain',
@@ -78,7 +78,7 @@ export const projectCategories: Category[] = [
 				description: `<div><p>Stronger Together is a collaborative fitness mobile application to motivate and inspire others to workout and get stronger.</p><p>It's a simple app where you log everytime you complete a set of pull-ups, push-ups, and other exercises, and everyone else with the app will receive a notification.</p><p>Used React Native, Firebase Notifications, and MongoDB.</p></div>`,
 				url: 'https://example.com/',
 				thumbnail: `${IMAGE_CDN_URL_PREFIX}/assets/stronger-two.png`,
-				banner: 'https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixlib=rb-4.0.3',
+				banner: `${IMAGE_CDN_URL_PREFIX}/assets/stronger-together-app-screens.png`,
 				background: 'variant-filled-primary',
 				additionalStyles: 'object-contain'
 			}
@@ -125,9 +125,7 @@ export const projectCategories: Category[] = [
           During my time at the company, I have led the design and development of many integral features that the company is using today 
         </div>`,
 				url: 'https://www.cityhive.net/',
-				// thumbnail: `${IMAGE_CDN_URL_PREFIX}/2021/cityhive/thumb.png`,
-				thumbnail:
-					'https://assets.lightspeedhq.com/img/2016/07/500db4e8-city-hive-logo-ben-field.png',
+				thumbnail: `${IMAGE_CDN_URL_PREFIX}/assets/ch-logo-white.png`,
 				banner: `${IMAGE_CDN_URL_PREFIX}/2021/cityhive/img_2.png`,
 				background: 'variant-filled-tertiary'
 			},
@@ -140,7 +138,7 @@ export const projectCategories: Category[] = [
           See the highlights in <a href="#" target="_blank">My Resume</a> to read more about my notable achievements and contributions here.
         </div>`,
 				url: 'https://www.linkedin.com/company/deltika-ltd/',
-				thumbnail: `${IMAGE_CDN_URL_PREFIX}/2021/deltika/thumb.jpeg`,
+				thumbnail: `${IMAGE_CDN_URL_PREFIX}/assets/deltika-white.png`,
 				banner: `${IMAGE_CDN_URL_PREFIX}/2021/deltika/img_2.png`,
 				background: 'variant-filled-tertiary'
 			}
