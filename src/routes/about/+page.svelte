@@ -31,12 +31,7 @@
 		<!-- / -->
 		<p class="md:text-xl opacity-75">
 			I started attending my local community college pursuing a degree in
-      <a
-        class="anchor"
-        href="https://en.wikipedia.org/wiki/Software_development"
-        target="_blank"
-        rel="noreferrer"
-      >computer science</a>, however after learning more on my own and being dissatisfied with the learning curriculum,
+      computer science, however after learning more on my own and being dissatisfied with the learning curriculum,
       I decided to take the road less travelled and dropped out to go full time on learning on my own. 
       After roughly a year of self studying I began working as a full stack developer in a small startup where I was tasked with developing a SaaS product to provide analytics for Fiverr freelancers.
       Having quickly learned the ins and outs of web development I gained valuable experience working on various projects.

@@ -30,7 +30,7 @@
 					target="_blank"
 					rel="noreferrer"
 				>
-					<span>Launch</span>
+					<span>{project.launchButtonText || 'Launch'}</span>
 					<i class="fa-solid fa-arrow-up-right-from-square" />
 				</a>
 			</div>

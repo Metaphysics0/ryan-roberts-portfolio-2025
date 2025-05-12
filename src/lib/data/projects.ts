@@ -1,6 +1,6 @@
 // Project Data
 
-import { IMAGE_CDN_URL_PREFIX } from '$lib/constants';
+import { CDN_URL_PREFIX } from '$lib/constants';
 
 export interface Category {
 	/** Provide a category title. */
@@ -38,6 +38,8 @@ export interface Project {
 
 	/** If true, render a white background behind the thumbnail (for transparent PNGs). */
 	needsWhiteBg?: boolean;
+
+	launchButtonText?: string;
 }
 
 export const projectCategories: Category[] = [
@@ -57,8 +59,8 @@ export const projectCategories: Category[] = [
         </div>
         `,
 				url: 'https://songsterr-downloader.com',
-				thumbnail: `${IMAGE_CDN_URL_PREFIX}/2023/songsterr-downloader/logo.png`,
-				banner: `${IMAGE_CDN_URL_PREFIX}/2023/songsterr-downloader/demo.gif`,
+				thumbnail: `${CDN_URL_PREFIX}/2023/songsterr-downloader/logo.png`,
+				banner: `${CDN_URL_PREFIX}/2023/songsterr-downloader/demo.gif`,
 				additionalStyles: 'object-contain',
 				background: 'variant-filled-primary'
 			},
@@ -67,8 +69,8 @@ export const projectCategories: Category[] = [
 				name: 'Open Tunings',
 				description: `<div><p>Open tunings is a website tailored for guitarists and musicians who aspire to find new and alternate ways to tune their guitar.</p><p>It's a crowd-sourced listing website, where anybody can add a tuning for other guitarists to try. Created a web based instrument with Tone.js, to preview and listen to the way the tuning sounds.</p><p>Used SvelteKit, MongoDB, Tailwind, Vercel, and more to create this.</p></div>`,
 				url: 'https://open-tunings.vercel.app/',
-				thumbnail: `${IMAGE_CDN_URL_PREFIX}/2023/open-tunings/logo-lg.png`,
-				banner: `${IMAGE_CDN_URL_PREFIX}/2023/open-tunings/create_demo.gif`,
+				thumbnail: `${CDN_URL_PREFIX}/2023/open-tunings/logo-lg.png`,
+				banner: `${CDN_URL_PREFIX}/2023/open-tunings/create_demo.gif`,
 				additionalStyles: 'object-contain',
 				background: 'variant-filled-primary'
 			},
@@ -76,11 +78,12 @@ export const projectCategories: Category[] = [
 				slug: 'stronger-together',
 				name: 'Stronger Together',
 				description: `<div><p>Stronger Together is a collaborative fitness mobile application to motivate and inspire others to workout and get stronger.</p><p>It's a simple app where you log everytime you complete a set of pull-ups, push-ups, and other exercises, and everyone else with the app will receive a notification.</p><p>Used React Native, Firebase Notifications, and MongoDB.</p></div>`,
-				url: 'https://example.com/',
-				thumbnail: `${IMAGE_CDN_URL_PREFIX}/assets/stronger-two.png`,
-				banner: `${IMAGE_CDN_URL_PREFIX}/assets/stronger-together-app-screens.png`,
+				url: 'https://github.com/Metaphysics0/stronger-together',
+				thumbnail: `${CDN_URL_PREFIX}/assets/stronger-two.png`,
+				banner: `${CDN_URL_PREFIX}/assets/stronger-together-app-screens.png`,
 				background: 'variant-filled-primary',
-				additionalStyles: 'object-contain'
+				additionalStyles: 'object-contain',
+				launchButtonText: 'Source Code'
 			}
 		]
 	},
@@ -125,8 +128,8 @@ export const projectCategories: Category[] = [
           During my time at the company, I have led the design and development of many integral features that the company is using today 
         </div>`,
 				url: 'https://www.cityhive.net/',
-				thumbnail: `${IMAGE_CDN_URL_PREFIX}/assets/ch-logo-white.png`,
-				banner: `${IMAGE_CDN_URL_PREFIX}/2021/cityhive/img_2.png`,
+				thumbnail: `${CDN_URL_PREFIX}/assets/ch-logo-white.png`,
+				banner: `${CDN_URL_PREFIX}/2021/cityhive/img_2.png`,
 				background: 'variant-filled-tertiary'
 			},
 			{
@@ -138,8 +141,8 @@ export const projectCategories: Category[] = [
           See the highlights in <a href="#" target="_blank">My Resume</a> to read more about my notable achievements and contributions here.
         </div>`,
 				url: 'https://www.linkedin.com/company/deltika-ltd/',
-				thumbnail: `${IMAGE_CDN_URL_PREFIX}/assets/deltika-white.png`,
-				banner: `${IMAGE_CDN_URL_PREFIX}/2021/deltika/img_2.png`,
+				thumbnail: `${CDN_URL_PREFIX}/assets/deltika-white.png`,
+				banner: `${CDN_URL_PREFIX}/2021/deltika/img_2.png`,
 				background: 'variant-filled-tertiary'
 			}
 		]
