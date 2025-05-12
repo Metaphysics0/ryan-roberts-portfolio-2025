@@ -1,9 +1,5 @@
 <script>
 	import { CONCERT_PHOTO_1_URL, RESUME_URL } from '$lib/constants';
-
-	export let data;
-
-	console.log('DATA', data);
 </script>
 
 <div class="page-container page-spacing">
